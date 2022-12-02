@@ -98,6 +98,6 @@ th, td{
     text-align: center;
 }
 
-#mobile{
+#mobile, #mainMobile{
     display: none;
 }
