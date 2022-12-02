@@ -10,25 +10,28 @@
 
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
 </head>
 
 <body>
+
     <main>
         <img src="/imgs/capa_principal.png" alt="capa_principal_do_álbum">
         <div id="information">
             <h3>PLAYLIST</h3>
             <h1>Mix Rock and Rap</h1>
-            <p>Criada por: Marcelo Augusto.524 músicas,45h 8m</p>    
+            <p>Criada por: Marcelo Augusto.524 músicas,45h 8m</p>
             <div id="pause">
-                <button>PAUSE</button>
+                <button id="pause">PAUSE</button>
                 <p id="spam1">...</p>
             </div>
         </div>
         <span id="spam2">SEGUIDORES <br>1</span>
     </main>
-    <table>
+
+    <table id="desktop">
         <thead>
             <tr>
                 <th class="td-hair"></th>
@@ -56,14 +59,6 @@
                 <td class="album">Encore</td>
                 <td class="add">1 dias</td>
                 <td class="duration">4:44</td>
-            </tr>
-            <tr>
-                <td class="td-hair"><i class="far fa-heart"></i></td>
-                <td class="music">We As Americans</td>
-                <td class="artist">Eminem</td>
-                <td class="album">Encore</td>
-                <td class="add">2 dias</td>
-                <td class="duration">4:36</td>
             </tr>
             <tr>
                 <td class="td-hair"><i class="far fa-heart"></i></td>
@@ -109,14 +104,6 @@
             </tr>
             <tr>
                 <td class="td-hair"><i class="far fa-heart"></i></td>
-                <td class="music">Dust N' Bones</td>
-                <td class="artist">Guns N' Roses</td>
-                <td class="album">Use Your Illusion I</td>
-                <td class="add">3 dias</td>
-                <td class="duration">4:58</td>
-            </tr>
-            <tr>
-                <td class="td-hair"><i class="far fa-heart"></i></td>
                 <td class="music">Right Next Door to Hell</td>
                 <td class="artist">Guns N' Roses</td>
                 <td class="album">Use Your Illusion I</td>
@@ -158,15 +145,8 @@
                 <td class="duration">5:51</td>
             </tr>
             <tr>
-                <td class="td-hair"><i class="far fa-heart"></i></td>
-                <td class="music">Crime Vai e Vem</td>
-                <td class="artist">Racionais MC's</td>
-                <td class="album">Nada como um Dia após o Outro Dia</td>
-                <td class="add">7 dias</td>
-                <td class="duration">7:56</td>
-            </tr>
 
-            <!--Nirvana-->
+                <!--Nirvana-->
             <tr>
                 <td class="td-hair"><i class="far fa-heart"></i></td>
                 <td class="music">Something in the Way</td>
@@ -193,20 +173,174 @@
             </tr>
             <tr>
                 <td class="td-hair"><i class="far fa-heart"></i></td>
-                <td class="music">In Bloom</td>
-                <td class="artist">Nirvana</td>
-                <td class="album">Nevermind</td>
-                <td class="add">4 dias</td>
-                <td class="duration">4:15</td>
-            </tr>
-            <tr>
-                <td class="td-hair"><i class="far fa-heart"></i></td>
                 <td class="music">Come as You Are</td>
                 <td class="artist">Nirvana</td>
                 <td class="album">Nevermind</td>
                 <td class="add">3 dias</td>
                 <td class="duration">3:39</td>
             </tr>
+        </tbody>
+    </table>
+
+    <main id="mainMobile">
+        <img src="/imgs/capa_principal.png" alt="capa_principal_do_álbum">
+        <div id="information">
+            <h1>Mix Rock and Rap</h1>
+            <p>De Marcelo Augusto. 1 SEGUIDORES</p>
+            
+            <button id="button1">ORDEM ALEATÓRIA</button>
+            <button id="button2">ADICIONAR MÚSICAS</button>            
+        </div>
+    </main>
+
+    <table id="mobile">
+        
+        <tbody>
+            <!--Eminem-->
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Mockingbird</p>
+                    <p class="descripiton">Eminem . Encore</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Love Your More</p>
+                    <p class="descripiton">Eminem . Encore</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">In Bloom</p>
+                    <p class="descripiton">Eminem . Encore</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Crazy In Love</p>
+                    <p class="descripiton">Eminem . Encore</p>
+                </td>
+            </tr>
+
+            <!--Gun's Roses-->
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">November Rain</p>
+                    <p class="descripiton">Guns N' Roses . Use Your Illusion I</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">The Garden</p>
+                    <p class="descripiton">Guns N' Roses . Use Your Illusion I</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Don't Cry (original)</p>
+                    <p class="descripiton">Guns N' Roses . Use Your Illusion I</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-eminem.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Right Next Door to Hell</p>
+                    <p class="descripiton">Guns N' Roses . Use Your Illusion I</p>
+                </td>
+            </tr>
+
+            <!-- Racionais-->
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-racionais.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Jesus Chorou</p>
+                    <p class="descripiton">Racionais MC's . Nada como um Dia após o Outro Dia</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-racionais.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Nego Drama</p>
+                    <p class="descripiton">Racionais MC's . Nada como um Dia após o Outro Dia</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-racionais.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Vida Loka, Pt. 1</p>
+                    <p class="descripiton">Racionais MC's . Nada como um Dia após o Outro Dia</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-racionais.jpg" alt="Imagem da Capa do Álbum"></td>
+
+                <td class="music">
+                    <p class="title">Vida Loka, Pt. 2</p>
+                    <p class="descripiton">Racionais MC's . Nada como um Dia após o Outro Dia</p>
+                </td>
+            </tr>
+
+            <!--Nirvana-->
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-nirvana.jpg" alt="Imagem da Capa de Álbum"></td>
+                <td class="song">
+                    <p class="title">Something in the Way</p>
+                    <p class="descripiton">Nirvana . Nevermind</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-nirvana.jpg" alt="Imagem da Capa de Álbum"></td>
+                
+                <td class="music">
+                    <p class="title">Smells Like Teen Spirit</p>
+                    <p class="descripiton">Nirvana . Nevermind</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-nirvana.jpg" alt="Imagem da Capa de Álbum"></td>
+                <td class="music">
+                    <p class="title">Smells Like Teen Spirit</p>
+                    <p class="descripiton">Nirvana . Nevermind</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="imgAlbum"><img src="/imgs/capa_albuns/capa-nirvana.jpg" alt="Imagem da Capa de Álbum"></td>
+                <td class="music">
+                    <p class="title">Come as You Are</p>
+                    <p class="descripiton">Nirvana . Nevermind</p>
+                </td>
+            </tr>
+
         </tbody>
     </table>
 </body>

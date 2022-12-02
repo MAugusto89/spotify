@@ -9,8 +9,10 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: black;
     color: white;
+}
+body{
+    background-color: black;
 }
 main{
     display: flex;
@@ -35,13 +37,13 @@ main #information #pause{
     display: flex;
     padding-top: 20px;
 }
-main #information button{
+main #information #pause{
     padding: 10px 40px 10px 40px;
     text-decoration: none;
     background-color: green;
     border-radius: 20px;
 }
-main #information button:hover{
+main #information #pause:hover{
     cursor: pointer;
     background-color: white;
     color: black;
@@ -84,6 +86,10 @@ th, td{
 .td-hair{
     padding: 0px 0px 0px 20px;
 }
+.music {
+    text-align: left;
+    padding-left: 30px;
+}
 .artist, .album{
     text-align: left;
     padding-left: 30px;
@@ -91,7 +97,7 @@ th, td{
 .duration, .add{
     text-align: center;
 }
-.music {
-    text-align: left;
-    padding-left: 30px;
+
+#mobile{
+    display: none;
 }
