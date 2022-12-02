@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'principal';
+    src: url(../fonts/Gotham\ Bold.ttf);
+}
+@font-face {
+    font-family: 'music';
+    src: url(../fonts/circular-std-medium-500.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    font-family: 'principal';
+}
+main img{
+    width: 15%;
+}
+main #information{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 83%;
+    padding-left: 20px;
+}
+main #information p{
+    font-size: 15px;
+}
+main #information #pause{
+    display: flex;
+    padding-top: 20px;
+}
+main #information button{
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 20px;
+}
+main #information button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+}
+main #spam1{
+    font-family: 'principal';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 10px;
+}
+main #spam2{
+    float: right;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'music';
+}
+th{
+    height: 70px;
+}
+td{
+    padding: 15px;
+}
+th, td{
+    border-bottom: 2px solid #ddd;
+}
+.td-hair{
+    padding: 0px 0px 0px 20px;
+}
+.artist, .album{
+    text-align: left;
+    padding-left: 30px;
+}
+.duration, .add{
+    text-align: center;
+}
+.music {
+    text-align: left;
+    padding-left: 30px;
+}
