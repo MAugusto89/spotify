@@ -12,7 +12,7 @@
     color: white;
 }
 body{
-    background-color: black;
+    background-image: linear-gradient(to bottom,#d9280e  ,#e5c24f, #2fa1c3, #191414 15% );
 }
 main{
     display: flex;
@@ -27,8 +27,14 @@ main #information{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    width: 83%;
+    width: 80%;
     padding-left: 20px;
+}
+main #information h1{
+    font-size: 250%;
+}
+main #information h3{
+    font-size: 15px;
 }
 main #information p{
     font-size: 15px;
@@ -37,28 +43,19 @@ main #information #pause{
     display: flex;
     padding-top: 20px;
 }
-main #information #pause{
-    padding: 10px 40px 10px 40px;
+main #information #pause button{
+    padding: 10px 25px 10px 25px;
     text-decoration: none;
-    background-color: green;
+    background-color: #1DB954;
     border-radius: 20px;
+    border: 2px solid #1DB954;
 }
-main #information #pause:hover{
+main #information button:hover{
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid green;
 }
-main #spam1{
-    font-family: 'principal';
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 10px;
-    border-radius: 50%;
-    border: 2px solid white;
-    padding: 10px;
-}
+
 main #spam2{
     float: right;
     text-align: right;
@@ -67,36 +64,40 @@ main #spam2{
     justify-content: end;
 }
 
-table{
+#desktop{
     width: 90%;
     border-collapse: collapse;
     margin: auto;
     font-size: 20px;
     font-family: 'music';
 }
-th{
-    height: 70px;
+#desktop tr:hover{
+    background-color: rgb(87, 86, 86);
 }
-td{
+#desktop th{
+    height: 50px;
+}
+#desktop td{
     padding: 15px;
 }
-th, td{
-    border-bottom: 2px solid #ddd;
+#desktop th, td{
+    border-bottom: .5px solid #ddd;
 }
 .td-hair{
-    padding: 0px 0px 0px 20px;
+    padding-left: 20px;
 }
 .music {
     text-align: left;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .artist, .album{
     text-align: left;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .duration, .add{
     text-align: center;
 }
+
 
 #mobile, #mainMobile{
     display: none;

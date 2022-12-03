@@ -6,6 +6,7 @@
         padding: 0;
         margin: 0;
     }
+
     #mainMobile{
         text-align: center;
         display: flex;
@@ -14,10 +15,11 @@
         margin: 0 auto;
         padding: 0px;
         font-family: 'principal';
-        background: linear-gradient(180deg,#d9280e, #e5c24f, black);
+        background-image: linear-gradient(to bottom,#d9280e 15% ,#e5c24f, #2fa1c3 #191414 75% );
     }
     #mainMobile img{
-        width: 40%;
+        padding:10px;
+        width: 50%;
     }
     #mainMobile #information{
         background-color: transparent;
@@ -34,11 +36,11 @@
         font-size: 15px;
     }
     #button1{
-        padding: 10px 40px 10px 40px;
-        margin: 20px;
+        padding: 15px 40px 15px 40px;
+        margin: 10px;
         text-decoration: none;
-        background-color: green;
-        border-radius: 20px;
+        background-color: #1DB954;
+        border-radius: 30px;
         border: none;
         font-size: 20px;
     }
@@ -46,53 +48,73 @@
         border: none;
         font-size: 15px;
         text-decoration: none;
-        background-color: green;
+        background-color: transparent;
         border-radius: 20px;
         margin-top: 2%;
         padding: 5px 20px 5px 20px;
         margin-bottom: 20px;
+        border: 2px solid white;
     }
     #mainMobile #information button:hover{
         cursor: pointer;
         background-color: white;
-        color: black;
-        border: 2px solid green;
+        color: #191414;
+        border: 2px solid #1DB954;
     }
-    
+    #fa-download{
+        color: #1DB954;
+    }
 
     /*TABELA*/
     #mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 90%;
         border-collapse: collapse;
-        border-spacing: 0px;
-        margin: 0px;
-        padding: 0px;
+        margin: 0 auto;
         font-family: 'music';
     }
-    #mobile td{
-        margin: 0px;
-        padding: 0px;
+    .imgAlbum{
+        width: 30%;
+        padding-right: 10px;
     }
     .imgAlbum img{
-        margin: 0px;
-        padding: 0px;
-        width: 50%;
-    }
-    .song{
-        text-align: left;
-        padding-left: 0px;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
     }
     .title{
-        text-align: left;
-        padding-left: 0px;
+        font-size: 25px;
     }
     .descripiton{
         font-size: 15px;
     }
     td{
-        border-bottom: 2px solid #ddd;
+        padding-bottom: 25px;
+        border-bottom: none;
+    }
+
+    #playerBottom{
+        background-color: #191414;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        border: .5px solid #191414;
+        border-top: 1px solid  #ddd;
+    }
+    #playerBottom .imgAlbum{
+        height: 60px;
+        width: 70px;
+    }
+    #playerBottom .descripiton{
+        font-size: 20px;
+    }
+    .hair, .pause{
+        margin: 10px;        
+        font-size: 30px;
     }
 }
+
